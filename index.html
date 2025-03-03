@@ -1,127 +1,154 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Blog</title>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-<title>My First GitHub Page</title>
-  
-<!-- Bootstrap CSS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-<!-- Custom CSS -->
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
 
-  <link rel="stylesheet" href="styles.css">
-  
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        .blog-header {
+            background: #343a40;
+            color: white;
+            padding: 20px 0;
+        }
+
+        .blog-header a {
+            color: white;
+            text-decoration: none;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .post-img {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        .blog-footer {
+            background: #343a40;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+        .blog-sidebar {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
 </head>
 
 <body>
-  
-<!-- Your content goes here -->
 
+    <!-- Header -->
+    <header class="blog-header text-center">
+        <div class="container">
+            <a href="index.html">My Personal Blog</a>
+        </div>
+    </header>
 
-<!-- Bootstrap JS and dependencies -->
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <!-- Main Content -->
+    <div class="container mt-4">
+        <div class="row">
+            <!-- Blog Posts Section -->
+            <div class="col-md-8">
+                <!-- Featured Post -->
+                <div class="card mb-4">
+                    <img src="your-featured-image.jpg" class="post-img" alt="Featured Post">
+                    <div class="card-body">
+                        <h2 class="card-title">Welcome to My Blog</h2>
+                        <p class="card-text">This is my personal space where I share my thoughts, experiences, and ideas. Stay tuned for more posts!</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+                <!-- Blog Post 1 -->
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h3 class="card-title">My First Blog Post</h3>
+                        <p class="text-muted">Published on March 1, 2025</p>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget lorem vitae orci hendrerit gravida.</p>
+                        <a href="#" class="btn btn-outline-primary">Read More</a>
+                    </div>
+                </div>
+
+                <!-- Blog Post 2 -->
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h3 class="card-title">Exploring New Ideas</h3>
+                        <p class="text-muted">Published on February 20, 2025</p>
+                        <p class="card-text">Cras fringilla, mi nec pellentesque fermentum, elit odio sagittis enim, in cursus nisi purus nec metus.</p>
+                        <a href="#" class="btn btn-outline-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="col-md-4">
+                <div class="blog-sidebar">
+                    <h4>About Me</h4>
+                    <p>Hi! I'm Roman Ludick, a passionate blogger who loves to write about tech, travel, and personal experiences.</p>
+
+                    <h5 class="mt-4">Recent Posts</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">My First Blog Post</a></li>
+                        <li><a href="#">Exploring New Ideas</a></li>
+                        <li><a href="#">How I Started My Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="blog-footer">
+        <p>&copy; 2025 Roman Ludick | <a href="contact.html">Contact Me</a></p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 
 </body>
 
 </html>
 
-<header>
-
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-
-<div class="container">
-
-<a class="navbar-brand" href="index.html">My Website</a>
-
-<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-
-<span class="navbar-toggler-icon"></span>
-
-</button>
-
-<div class="collapse navbar-collapse" id="navbarNav">
-
-<ul class="navbar-nav">
-
-<li class="nav-item">
-
-<a class="nav-link" href="index.html">Home</a>
-
-</li>
-
-<li class="nav-item">
-
-<a class="nav-link" href="about.html">About</a>
-
-</li>
-  <li class="nav-item">
-    
-    <a class="nav-link" href="interests.html">Interests</a>
-
-  </li>
-<li class="nav-item">
-
-<a class="nav-link" href="contact.html">Contact</a>
-
-</li>
-
-</ul>
-
-</div>
-
-</div>
-
-</nav>
-
-</header>
-
-
-<main>
-
-<main class="container my-5">
-
-<div class="row">
-<div class="col-md-8">
-
-<h2>Welcome to My Website!</h2>
-
-<p>This is a simple webpage hosted on GitHub Pages.</p>
-
-<p>Here's a picture of a cute cat:</p>
-
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIMruu4IerLgcl56tLwdroNLYLBBIxuFMzwg&s">
-
-<p class="mt-3">Visit <a href="https://github.com" class="btn btn-primary">GitHub</a> to learn more about coding.</p>
-
-</div>
-
-<div class="col-md-4">
-<div class="card">
-<div class="card-body">
-<h5 class="card-title">Did You Know?</h5>
-<p class="card-text">GitHub Pages is a free service to host static websites directly from your GitHub repository.</p>
-
-</div>
-</div> 
-</div>
-</div>
-  
-</main>
-
-
-<footer>
-
-<p>&copy; 2025 Roman Ludick</p>
-
-</footer>
-  
-</body>
-
-</html>
