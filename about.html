@@ -1,97 +1,149 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
 
-<meta charset="UTF-8">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
 
-<title>About Me</title>
+        .about-container {
+            background: white;
+            padding: 40px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
 
-<link rel="stylesheet" href="styles.css">
+        .profile-img {
+            width: 100%;
+            border-radius: 5px;
+        }
 
-  <!-- Bootstrap CSS -->
+        .about-sidebar {
+            background: #343a40;
+            color: white;
+            padding: 20px;
+            border-radius: 5px;
+        }
 
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        .about-sidebar h5 {
+            border-bottom: 2px solid white;
+            padding-bottom: 5px;
+        }
 
+        .blog-footer {
+            background: #343a40;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+    </style>
 </head>
 
 <body>
 
-<header>
+    <!-- Header -->
+    <header class="blog-header text-center bg-dark text-white py-3">
+        <div class="container">
+            <h1>About Me</h1>
+        </div>
+    </header>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="about.html">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-<div class="container">
+    <!-- About Section -->
+    <div class="container mt-5">
+        <div class="row">
+            <!-- About Me Content -->
+            <div class="col-md-8">
+                <div class="about-container">
+                    <h2>Hi, I'm Roman Ludick</h2>
+                    <p>Welcome to my personal blog! I'm a passionate writer, tech enthusiast, and lifelong learner. I love sharing my experiences, thoughts, and knowledge through my blog.</p>
+                    <p>My interests range from technology and coding to personal growth and travel. Whether I’m working on a new project, exploring new ideas, or simply reflecting on life, I enjoy documenting my journey and engaging with like-minded people.</p>
 
-<a class="navbar-brand" href="index.html">My Website</a>
+                    <h3 class="mt-4">My Story</h3>
+                    <p>It all started when I discovered my passion for writing and technology. Over the years, I have learned and experimented with different things, constantly evolving and growing. This blog is my space to share what I've learned and connect with people who have similar interests.</p>
 
-<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <h3 class="mt-4">What You'll Find Here</h3>
+                    <ul>
+                        <li>Insights on technology and coding</li>
+                        <li>Personal development and productivity tips</li>
+                        <li>Travel experiences and lessons learned</li>
+                        <li>Book recommendations and reviews</li>
+                    </ul>
+                </div>
+            </div>
 
-<span class="navbar-toggler-icon"></span>
+            <!-- Sidebar -->
+            <div class="col-md-4">
+                <div class="about-sidebar">
+                    <h5>Quick Facts</h5>
+                    <p><strong>Full Name:</strong> Roman Ludick</p>
+                    <p><strong>Location:</strong> City, Country</p>
+                    <p><strong>Profession:</strong> Blogger & Developer</p>
 
-</button>
+                    <h5 class="mt-4">Skills</h5>
+                    <ul>
+                        <li>Web Development</li>
+                        <li>Content Writing</li>
+                        <li>Problem-Solving</li>
+                    </ul>
 
-<div class="collapse navbar-collapse" id="navbarNav">
+                    <h5 class="mt-4">Hobbies</h5>
+                    <ul>
+                        <li>Reading & Writing</li>
+                        <li>Traveling</li>
+                        <li>Exploring New Technologies</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 
-<ul class="navbar-nav">
+    <!-- Footer -->
+    <footer class="blog-footer">
+        <p>&copy; 2025 Roman Ludick | <a href="index.html" class="text-warning">Home</a></p>
+    </footer>
 
-<li class="nav-item">
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 
-<a class="nav-link" href="index.html">Home</a>
-
-</li>
-
-<li class="nav-item">
-
-<a class="nav-link" href="about.html">About</a>
-
-</li>
-
-<li class="nav-item">
-
-<a class="nav-link" href="contact.html">Contact</a>
-
-</li>
-
-</ul>
-
-</div>
-
-</div>
-
-</nav>
-
-</header>
-
-
-<main>
-
-<main class="container my-5">
-
-<h2>About Me</h2>
-
-<p>Hi! I'm a beginner web developer learning how to use GitHub Pages.</p>
-
-<p>This is my first multi-page website, and I'm excited to share it with you!</p>
-  
-</main>
-
-
-<footer>
-
-<p>&copy; 2023 Your Name</p>
-
-</footer>
-  
-<!-- Bootstrap JS and dependencies -->
-
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
-  
 </body>
 
 </html>
+
