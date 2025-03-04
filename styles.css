@@ -101,4 +101,41 @@ body {
     padding: 20px;
     margin-top: 50px;
 }
+ body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        .blog-header {
+            background: #343a40;
+            color: white;
+            padding: 20px 0;
+        }
+
+        .blog-header a {
+            color: white;
+            text-decoration: none;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .post-img {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        .blog-footer {
+            background: #343a40;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+        .blog-sidebar {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
 
